@@ -5,7 +5,6 @@ The name isn't fully decided upon so it might change.
 
 
 #### TODO ####
-- [ ] Make a script that can execute all games automaticly
 - [ ] Make a packed script that include obfuscated sources (Tommy Play, Spotify Island)
 
 
