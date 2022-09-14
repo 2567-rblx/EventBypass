@@ -3,13 +3,11 @@ The name isn't fully decided upon so it might change.
 + I'm working on my markdown skills so make it prettier if you can
 + I suck at github so :)
 
+
 #### TODO ####
 - [ ] Make a script that can execute all games automaticly
-- [ ] Make that script packed so you only need to do 1 request
-- [ ] a
+- [ ] Make a packed script that include obfuscated sources (Tommy Play, Spotify Island)
 
-#### Extra Info ####
-Currently Tommy Play and Spotify Island won't be open sourced. Once I'm bothered I will make a script for closed source shit
 
 # Current Games (Total: 28)
 [8th Annual Bloxy Awards](https://www.roblox.com/games/6225076142)\
