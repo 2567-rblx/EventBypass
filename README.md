@@ -8,7 +8,7 @@ The name isn't fully decided upon so it might change.
 - [ ] Make a packed script that include obfuscated sources (Tommy Play, Spotify Island)
 
 
-# Current Games (Total: 28)
+# Current Games (Total: 29)
 [8th Annual Bloxy Awards](https://www.roblox.com/games/6225076142)\
 [Beatland](https://www.roblox.com/games/8528736393)\
 [Chipotle Burrito Builder](https://www.roblox.com/games/7603178367)\
