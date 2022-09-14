@@ -1,12 +1,17 @@
+-- This might be over-engineered but whatever I have already made it
+
+
 -- In case the person joins the maze place
 pcall(function()
 	game:GetService("ReplicatedStorage").RemoteEvent:FireServer("CollectRewards", "Chipotle Hat")
 	game:GetService("Credits To: https://v3rmillion.net/member.php?action=profile&uid=843091")
 end)
 
+
 local clientData = require(game.ReplicatedStorage.Modules.Core.LocalData)
 local itemData = debug.getupvalue(getconnections(game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Sidebar"):WaitForChild("Right"):WaitForChild("Verch").Activated)[1].Function, 6)
 local remoteEvent = game:GetService("ReplicatedStorage").RemoteEvent
+
 
 -- Get Moola then buy Gwaa-hee-oh Tee; Nom Nom Aura; Chef Outfit
 coroutine.wrap(function()
@@ -26,7 +31,7 @@ coroutine.wrap(function()
 		task.wait(0.1)
 
 		-- Cut Steaks
-		for i=1, 25 do
+		for i=1, 15 do
 			remoteEvent:FireServer("incrementGGSSessionScore", "Cut")
 		end
 		task.wait(0.1)
@@ -40,7 +45,7 @@ coroutine.wrap(function()
 
 	game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer("GetSpecific", "GGS-firstPlay")
 	remoteEvent:FireServer("UpdateFirstPlayGGS")
-	game:GetService("ReplicatedStorage").RemoteEvent:FireServer("gameExited")
+	remoteEvent:FireServer("gameExited")
 	task.wait(3)
 
 	-- Hardcoded cause its theres only 3 items and fuck you
@@ -75,21 +80,54 @@ do
 
 		remoteEvent:FireServer("burritoBuilderResults", {missingAmount})
 		remoteEvent:FireServer("togglePlayerVisible", false)
-	end
-
-	task.wait(3)
-
-	-- Buy Items
-	while true do
+	else
+		warn("Already have enough burritos: buying items")
 		for itemName, price in pairs(itemData) do
-			print(itemName, price)
 			if itemName == "Tie-Dye Shirt" then
 				remoteEvent:FireServer("EquipClothing", itemName)
 			else
 				remoteEvent:FireServer("EquipAccessory", itemName)
 			end
 		end
+	end
 
-		task.wait(1)
+	task.wait(3)
+
+	-- Only do this if they made any burritos this session
+	if missingAmount >= 1 then
+		-- Reconnect cause game bugs the fuck out
+		local teleportScript = [=[
+			if not game:IsLoaded() then
+				game.Loaded:Wait()
+			end
+
+			local remoteEvent = game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent")
+			local thing = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Sidebar"):WaitForChild("Right"):WaitForChild("Verch")
+			task.wait(3)
+			local itemData = debug.getupvalue(getconnections(thing.Activated)[1].Function, 6)
+
+			for itemName, price in pairs(itemData) do
+				if itemName == "Tie-Dye Shirt" then
+					remoteEvent:FireServer("EquipClothing", itemName)
+				else
+					remoteEvent:FireServer("EquipAccessory", itemName)
+				end
+			end
+		]=]
+
+		local queue_on_teleport = syn and syn.queue_on_teleport or queue_on_teleport or nil
+		if queue_on_teleport then
+			queue_on_teleport(teleportScript)
+			game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
+		else
+			warn("Couldn't find 'queue_on_teleport' function rejoin")
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Exploit Error",
+				Text = "Couldn't find 'queue_on_teleport' function rejoin",
+				Duration = 60,
+			})
+
+			loadstring(teleportScript)()
+		end
 	end
 end
