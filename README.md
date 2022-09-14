@@ -8,6 +8,9 @@ The name isn't fully decided upon so it might change.
 - [ ] Make that script packed so you only need to do 1 request
 - [ ] a
 
+#### Extra Info ####
+Currently Tommy Play and Spotify Island won't be open sourced. Once I'm bothered I will make a script for closed source shit
+
 # Current Games (Total: 28)
 [8th Annual Bloxy Awards](https://www.roblox.com/games/6225076142)\
 [Beatland](https://www.roblox.com/games/8528736393)\
