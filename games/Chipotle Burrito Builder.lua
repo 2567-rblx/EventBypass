@@ -80,12 +80,16 @@ do
 	task.wait(3)
 
 	-- Buy Items
-	for itemName, price in pairs(itemData) do
-		warn(itemName, price)
-		if itemName == "Tie-Dye Shirt" then
-			remoteEvent:FireServer("EquipClothing", itemName)
-		else
-			remoteEvent:FireServer("EquipAccessory", itemName)
+	while true do
+		for itemName, price in pairs(itemData) do
+			print(itemName, price)
+			if itemName == "Tie-Dye Shirt" then
+				remoteEvent:FireServer("EquipClothing", itemName)
+			else
+				remoteEvent:FireServer("EquipAccessory", itemName)
+			end
 		end
+
+		task.wait(1)
 	end
 end
