@@ -1,9 +1,16 @@
-game:GetService("ReplicatedStorage").Common.remote.PromoCodes:InvokeServer("18KLIKES")
+-- Redeem Codes
+local codes = {"LOOKBOOK", "10KLIKES", "18KLIKES", "30KLIKES"}
+for i, code in ipairs(codes) do
+	coroutine.wrap(function()
+		game:GetService("ReplicatedStorage").Common.remote.PromoCodes:InvokeServer(code)
+	end)()
+end
+
 
 local dataModule = require(game:GetService("ReplicatedStorage").Common.gameplay.data)
 
 local function getClientData()
-	return debug.getupvalue(dataModule.resetPlayerData, 1)[client]
+	return debug.getupvalue(dataModule.resetPlayerData, 1)[game.Players.LocalPlayer]
 end
 
 --// Get NARS Flower Necklace
@@ -46,16 +53,8 @@ while true do
 end
 
 
---[[ Buy items;
-	NARS Platinum Short Pixie Hair,
-	NARS Black Hoodie,
-	NARS Blush Leather Moto Jacket,
-	NARS Molten Laguna Crop Top,
-	NARS Tropical Cuban Shirt,
-	plus others if you have the cash
-]]
 for name, tbl in pairs(require(game:GetService("ReplicatedStorage").Common.gameplay.shopItems)) do
-	if --[[tbl.SandDollarsPrice and ]]tbl.Type == "UGC" then
+	if -tbl.SandDollarsPrice and tbl.Type == "UGC" then
 		coroutine.wrap(function()
 			game:GetService("ReplicatedStorage").Common.remote.purchaseItem:InvokeServer(name)
 		end)()
