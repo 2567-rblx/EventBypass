@@ -17,6 +17,7 @@ The name isn't fully decided upon so it might change.
 [Dunking Simulator](https://www.roblox.com/games/7655745946)\
 [George Ezra’s Gold Rush Kid Experience](https://www.roblox.com/games/10057963710)\
 [Guacathon](https://www.roblox.com/games/10146432319)\
+[iHeartLand: Music Tycoon](https://www.roblox.com/games/9524757503)\
 [Island of Move](https://www.roblox.com/games/5306359293)\
 [Logitech Song Breaker Awards](https://www.roblox.com/games/9230434873)\
 [Mansion of Wonder](https://www.roblox.com/games/6901029464)\
