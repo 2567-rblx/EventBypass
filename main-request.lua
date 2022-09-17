@@ -15,6 +15,7 @@ local gameDictionary = {
 	[9129288160] = "Tommy Play",
 	[9230434873] = "Logitech Song Breaker Awards",
 	[9377039667] = "Roblox Innovation Awards",
+	[9524757503] = "IHeartLand Music Tycoon",
 	[9557222597] = "Clarks' CICAVERSE",
 	[9604473769] = "Tate McRae Concert Experience",
 	[10057963710] = "George Ezra’s Gold Rush Kid Experience",
