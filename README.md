@@ -3,7 +3,7 @@
 + I'm working on my markdown skills so make it prettier if you can
 + I suck at github so :)
 
-# Current Games (Total: 33)
+# Current Games (Total: 35)
 Unsorted\
 [8th Annual Bloxy Awards](https://www.roblox.com/games/6225076142)\
 [Beatland](https://www.roblox.com/games/8528736393)\
@@ -18,6 +18,7 @@ Unsorted\
 [Logitech Song Breaker Awards](https://www.roblox.com/games/9230434873)\
 [Mansion of Wonder](https://www.roblox.com/games/6901029464)\
 [McLaren F1 Racing Experience](https://www.roblox.com/games/8526353932)\
+[My Little Pony](https://www.roblox.com/games/10085978574)\
 [NARS Color Quest](https://www.roblox.com/games/10204556059)\
 [Roblox Innovation Awards](https://www.roblox.com/games/9377039667)\
 [Samsung Space Tycoon](https://www.roblox.com/games/10105990977)\
@@ -27,6 +28,7 @@ Unsorted\
 [Tommy Play](https://www.roblox.com/games/9129288160)\
 [Walmart Land](https://www.roblox.com/games/10895555747)\
 [Welcome to TechQuest by Computer History Museum](https://www.roblox.com/games/10912060909)\
+[West Elm Home Design](https://www.roblox.com/games/9680886326)\
 [Why Don't We Launch Party](https://www.roblox.com/games/6366043734)\
 [Zara Larsson Launch Party](https://www.roblox.com/games/6656109940)\
 [iHeartLand: Music Tycoon](https://www.roblox.com/games/9524757503)\
