@@ -126,6 +126,7 @@ local games = {
 	[2546610365] = {'Roblox Creator Challenge (Libary)', [===[for a=1,10 do game:GetService("ReplicatedStorage").Events.FinishQuiz:InvokeServer("Lesson"..tostring(a))end]===]},
 	[3204381131] = {'Roblox Creator Quiz', [===[for a=1,10 do game:GetService("ReplicatedStorage").Events.FinishQuiz:InvokeServer("Lesson"..tostring(a))end]===]},
 	[4201429814] = {'Roblox Creator Challenge (Space)', [===[for a=1,10 do game:GetService("ReplicatedStorage").Events.FinishQuiz:InvokeServer("Lesson"..tostring(a))end]===]},
+	[9486506804] = {"FIFA World", [===[for a,b in ipairs(workspace.ScavengerHunt.Step1.Objects:GetChildren())do if b.ClassName=="Model"then firetouch(client.Character.HumanoidRootPart,b.Root)end end]===]}
 }
 
 local genv = getgenv()
