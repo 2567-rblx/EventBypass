@@ -1,9 +1,8 @@
 --[[
 Info:
-1. To use this with minification you will need to supply your own minification software I use a websocket hosting https://github.com/mathiasbynens/luamin
-2. You don't need to use minification it will just be a bit bigger
-3. You will need to copy the games folder into your workspace directory
-4. This will only create the 'local games = {...}'
+1. You don't need to use minification it will just be a bit bigger
+2. You will need to copy the games folder into your workspace directory
+3. This will only create the 'local games = {...}'
 ]]
 
 local gameScripts = listfiles("./games")
