@@ -43,7 +43,7 @@ while true do
 
 	for name, tbl in pairs(getClientData().challengesData) do
 		if tbl.Completed == false then
-			totalFalse += 1
+			totalFalse = totalFalse + 1
 		end
 	end
 
