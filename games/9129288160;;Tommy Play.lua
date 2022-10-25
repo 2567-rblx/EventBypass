@@ -34,7 +34,7 @@ if game.GameId == 3428694728 then
 		for name, tbl in pairs(require(game:GetService("ReplicatedStorage").lib.StoreItems).TokenClothing.Items) do
 			if tbl.ForSale == true and tbl.LinkedBadge ~= nil and tbl.CurrencyType == "Tokens" and table.find(ownedItems, name) == nil then
 				items[name] = tbl
-				totalPrice += tbl.Price
+				totalPrice = totalPrice + tbl.Price-- cause += seems to break on minify
 			end
 		end
 
