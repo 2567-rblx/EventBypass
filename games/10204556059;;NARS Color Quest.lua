@@ -37,6 +37,8 @@ for name, tbl in pairs(getClientData().challengesData) do
 	end)()
 end
 
+task.wait(4)
+--[[ Cant be fucked
 while true do
 	task.wait(0.2)
 	local totalFalse = 0
@@ -50,7 +52,7 @@ while true do
 	if totalFalse == 0 then
 		break
 	end
-end
+end]]
 
 
 for name, tbl in pairs(require(game:GetService("ReplicatedStorage").Common.gameplay.shopItems)) do
