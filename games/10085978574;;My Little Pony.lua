@@ -19,11 +19,11 @@ end
 -- Complete all missions
 for IDoN0t=1, 3 do
 	-- Finish standered 3 round mission
-	game:GetService("ReplicatedStorage").RemoteEvents.Gameplay:FireServer("Pipp", "Progress", 69696969)
+	game:GetService("ReplicatedStorage").RemoteEvents.Gameplay:FireServer("Pipp", "Progress", math.random(900, 1000))
 	task.wait(0.1)
-	game:GetService("ReplicatedStorage").RemoteEvents.Gameplay:FireServer("Zipp", "Progress", 69696969)
+	game:GetService("ReplicatedStorage").RemoteEvents.Gameplay:FireServer("Zipp", "Progress", math.random(900, 1000))
 	task.wait(0.1)
-	game:GetService("ReplicatedStorage").RemoteEvents.Gameplay:FireServer("Sunny", "Progress", 69696969)
+	game:GetService("ReplicatedStorage").RemoteEvents.Gameplay:FireServer("Sunny", "Progress", math.random(900, 1000))
 	task.wait(0.1)
 
 
